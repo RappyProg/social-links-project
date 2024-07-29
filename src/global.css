@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --mobile: 375px;
+  --desktop: 1440px;
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+  --weight: 0;
+  --slant: 0;
+}
+
+.weight-400{--weight: 400;}
+.weight-600{--weight: 600;}
+.weight-700{--weight: 700;}
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--weight);
+  font-style: normal;
+  font-variation-settings:
+    "slnt" var(--slant);
+}
+
+body p{
+  font-size: 14px;
+}
